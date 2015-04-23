@@ -52,6 +52,8 @@
     "webpack-dev-server": "1.7.0"
   },
   "dependencies": {
+    "immutable": "^3.7.2",
+    "kefir": "^2.0.0",
     "react": "^0.13.2"
   }
 }
