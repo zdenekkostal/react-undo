@@ -1,9 +1,9 @@
 require('./styles/app');
 
-import Button from './components/button';
+import Dashboard from './components/dashboard';
 
 React.render(
-    <Button value="Hello world" />,
+    <Dashboard />,
     document.getElementById('app')
 );
 
