@@ -1,9 +1,17 @@
 require('./styles/app');
 
 import Dashboard from './components/dashboard';
+import FluxComponent from 'flummox/component';
+import AppFlux from './data/flux';
+
+const flux = new AppFlux();
 
 React.render(
-    <Dashboard />,
+    <FluxComponent flux={flux}>
+        <FluxComponent connectToStores={['reports']}>
+            <Dashboard />
+        </FluxComponent>
+    </FluxComponent>,
     document.getElementById('app')
 );
 

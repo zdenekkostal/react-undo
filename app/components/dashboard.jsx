@@ -5,6 +5,8 @@ let Dashboard = class Dashboard extends Component {
     displayName: 'Dashboard'
 
     render() {
+        console.log(this.props.report);
+
         const reports = this.props.reports.map((report) => {
             return (
                 <Report {...report} />
@@ -17,18 +19,6 @@ let Dashboard = class Dashboard extends Component {
             </div>
         );
     }
-};
-
-Dashboard.defaultProps = {
-    reports: [{
-        left: 50,
-        top: 100,
-        title: 'Report 1'
-    }, {
-        left: 150,
-        top: 300,
-        title: 'Report 2'
-    }]
 };
 
 export default Dashboard;

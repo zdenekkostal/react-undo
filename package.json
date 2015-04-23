@@ -52,6 +52,8 @@
     "webpack-dev-server": "1.7.0"
   },
   "dependencies": {
+    "bluebird": "^2.9.24",
+    "flummox": "^4.0.0-alpha",
     "immutable": "^3.7.2",
     "kefir": "^2.0.0",
     "react": "^0.13.2"
